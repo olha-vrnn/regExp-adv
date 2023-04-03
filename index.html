@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./main.css">
+    <title>HW #14</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="form-block">
+            <form name="user-data">
+                <div class="input-box">
+                    <label for="userLogin" class="input-label">Login</label>
+                    <input type="text" id="userLogin" class="input-element" placeholder="Enter login">
+                </div>
+                <div class="input-box">
+                    <label for="userPassword" class="input-label">Password</label>
+                    <input type="password" id="userPassword" class="input-element" placeholder="Enter password">
+                </div>
+                <div class="input-box">
+                    <label for="userEmail" class="input-label">Email address</label>
+                    <input type="email" id="userEmail" class="input-element" placeholder="Enter email">
+                </div>
+                <div>
+                    <input type="button" value="Add user" id="addUserBtn" class="user-btn add-user-btn" disabled>
+                    <input type="button" value="Edit user" id="editUserBtn" class="user-btn edit-user-btn" disabled>
+                </div>
+            </form>
+        </div>
+        <div class="table-block">
+            <table>
+                <thead>
+                    <tr>
+                        <th class="table-header">#</th>
+                        <th class="table-header">Login</th>
+                        <th class="table-header">Password</th>
+                        <th class="table-header">Email</th>
+                        <th class="table-header">Edit</th>
+                        <th class="table-header">Delete</th>
+                    </tr>
+                </thead>
+                <tbody id="table-body">
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <script src="./script.js"></script>
+</body>
+
+</html>
